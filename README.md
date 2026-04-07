@@ -25,6 +25,7 @@ surface to the equilibrium constant of an isotopic exchange reaction.
 ```bash
 git clone https://github.com/username/lbnl_diatomics.git
 cd lbnl_diatomics
+```
 
 
 ## Usage
