@@ -265,7 +265,10 @@ Follows the methodology of:
     temperature", J. Chem. Phys. 67, 1007.
 
 specifically I implemented equations from from :
-    Richet, Y. Bottinga, M. Javoy, A review of hydrogen, carbon, nitrogen, oxygen, sulphur, and chlorine stable isotope fractionation among gaseous molecules, Annual Review of Earth and Planetary Sciences 5 (1977) 65–110. doi:10.1146/annurev.ea.05.050177.000433.
+    Richet, Y. Bottinga, M. Javoy, A review of hydrogen, carbon, nitrogen, 
+    oxygen, sulphur, and chlorine stable isotope fractionation among gaseous 
+    molecules, Annual Review of Earth and Planetary Sciences 5 (1977) 65–110. 
+    doi:10.1146/annurev.ea.05.050177.000433.
 
 Equation numbers in comments refer to that paper Richet 1977 Annual Review ... .
 """
@@ -835,7 +838,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--j-thresh", type=float, default=1e-10,
-        help="Convergence threshold for variable J (default: 9e-5).",
+        help="Convergence threshold for variable J (default: 1e-10).",
     )
     parser.add_argument(
         "--use-B0-in-rotation", action="store_true", default=False,
